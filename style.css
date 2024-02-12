@@ -1,0 +1,55 @@
+ h1 {
+    text-align: center;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+#containerImage {
+    position: relative;
+    display: inline-block;
+}
+
+#selectZone {
+    position: absolute;
+    border: 3px dashed #00f;
+    pointer-events: none;
+    display: none;
+}
+.form_text{
+    text-align: center;
+    border: 2px dotted;
+    width: 20%;
+    position: relative;
+    top: 15%;
+    left: 40%;
+    background-color: orange;
+}
+#spinner{
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.buttons {
+   
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttons:hover {
+    background-color: brown;
+  }
+  
+  input[type="text"] {
+    font-family: "Hedvig Letters Serif", Arial;
+    border-width: 5px;
+    border-radius: 10px;
+    padding: 5px;
+}

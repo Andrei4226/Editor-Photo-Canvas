@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor Photo</title>
+    <h1>Editor Photo</h1>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <br>
+    <form class="form_text">
+    <p>Introduceti textul dorit: <input type="text" id="addText" value="hello" /></p>
+    <p>Introdu marimea textului: <input type="text" id="sizeText" value="20" /></p>
+    <p>Introdu culoarea textului: <input type="text" id="colorText" value="red" /></p>
+    </form>
+    <br>
+   
+    <input type="file" id="photo" accept=".jpeg, .png, .jpg">
+    <div id="containerImage">
+        <canvas id="canvas1"></canvas>
+        <div id="selectZone"></div>
+    </div>
+    <select id="spinner">
+        <option value="colorBlackWhite">BlackWhite</option>
+        <option value="colorInversion">Inversion</option>
+    </select>
+    <button onclick="applyEffect()" class="buttons">Apply Efect</button>
+    <button onclick="addText()" class="buttons">Add Text</button>
+    <button onclick="crop()" class="buttons">Crop</button>
+    <button onclick="deleteSection()" class="buttons">Delete Section</button>
+    <button onclick="save()" class="buttons">Save</button>
+    <script src="javascript.js">  
+    </script>
+</body>
+
+</html>
